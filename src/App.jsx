@@ -1,9 +1,15 @@
+import Canvas from "./Canvas/index" // or "./Canvas"
+import Customizer from "./Pages/Customizer"
+import Home from "./Pages/Home"
+
 //called from main.jsx
 function App() {
   return (
-    <div>
-      <h1 className="head-text">Customify 3d app</h1>
-    </div>
+    <main className="app transition-all ease-in">
+      <Home/>
+      <Canvas/>
+      <Customizer/>
+    </main>
   );
 }
 
